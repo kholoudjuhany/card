@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(234, 47%, 15%, 0.9);
+    width: 500px;
+    height: 423px;
+    padding: 15px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.img {
+    opacity: 0.0
+}
+
+.purple {
+    border-radius: 0 7px 7px 0;
+    background: linear-gradient(0deg, hsla(277, 64%, 61%, 0.5) 0%, hsla(277, 64%, 61%, 0.5) 100%),url(image-header-desktop.jpg) 
+    center no-repeat;
+    background-size: cover;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+}
+
+.inter {
+    font-family: 'Inter';
+    font-size: 35px;
+}
+
+.inter1 {
+    font-family: 'Inter';
+    font-size: 25px;
+}
+
+
+.Lede {
+    font-family: 'Lexend Deca';
+}
+
+@media screen and (max-width: 775px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .inter {
+        font-size: 20px;
+    }
+    
+    .inter1 {
+        font-family: 'Inter';
+        font-size: 17px;
+    }
+
+    .Lede {
+        font-size: 12px;
+    }
+
+    .text {
+        order: 2;
+        width: 270px;
+        height: 370px;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: none;
+        border-top-right-radius: none;
+    }
+
+    .purple {
+        border-radius: 7px 7px 0px 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+    }
+
+    .img {
+        width: 300px;
+    }
+}
